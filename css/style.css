@@ -1,0 +1,12 @@
+body {
+    background-color: #F5F5F5;
+}
+
+.car-rent {
+    width: 20vw;
+    transition: transform 0.3s;
+}
+
+.car-rent:hover {
+    transform: translateY(-5px) ;
+}
