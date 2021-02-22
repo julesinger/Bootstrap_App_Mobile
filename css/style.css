@@ -10,3 +10,10 @@ body {
 .car-rent:hover {
     transform: translateY(-5px) ;
 }
+
+#contact-page {
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.2), 
+        rgba(0, 0, 0, 0.2)
+      ), url("../images/audi_1.jpg");
+}
