@@ -1,10 +1,11 @@
 body {
-    background-color: #F5F5F5;
+    background-color: #1F2533;
 }
 
 .car-rent {
     width: 20vw;
     transition: transform 0.3s;
+    border: none;
 }
 
 .car-rent:hover {
@@ -16,4 +17,13 @@ body {
         rgba(0, 0, 0, 0.2), 
         rgba(0, 0, 0, 0.2)
       ), url("../images/audi_1.jpg");
+}
+
+#about-page > header {
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.6), 
+        rgba(0, 0, 0, 0.6)
+      ), url("../images/business.jpg");
+      background-size: cover;
+      height: 50vh;
 }
