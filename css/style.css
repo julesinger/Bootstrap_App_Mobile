@@ -27,3 +27,29 @@ body {
       background-size: cover;
       height: 50vh;
 }
+
+@media screen and (max-width: 1400px) {
+    h1,h2 {
+        text-align: center;
+    }
+    .car-rent-container {
+        justify-content: center;
+    }
+
+    .car-rent {
+        width: 30vw;
+        
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .car-rent {
+        width: 70vw;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .car-rent {
+        width: 90vw;
+    }
+}
