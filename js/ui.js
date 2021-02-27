@@ -6,8 +6,11 @@ export let displayCarCard = function(car) {
     let html = `
         <img src="../images/${car.url}" class="card-img-top" alt="...">
         <div class="card-body">
-            <h5 class="card-title">${car.mod}</h5>
-            <p class="card-text">${car.desc}</p>
+            <div class="d-flex justify-content-between">
+                <h5 class="card-title">${car.mod}</h5>
+                <h5> À partir de <strong>${car.prices[0]}€ </strong></h5> 
+            </div>    
+                <p class="card-text">${car.desc}</p>
             <div class="container d-flex justify-content-end">
                <a href="/html/cars/${car.id}.html"> <button type="button" class="btn btn-dark">En savoir plus</button> </a>
             </div>
