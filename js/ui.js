@@ -12,11 +12,11 @@ export let displayCarCard = function(car) {
         </div>    
             <p class="card-text">${car.desc}</p>
         <div class="container d-flex justify-content-end">
-            <a href="/html/cars/${car.id}.html"> <button type="button" class="btn btn-dark">En savoir plus</button> </a>
+            <a href="/html/cars/${car.id}.html"> <button type="button" class="btn btn-dark"> En savoir plus </button> </a>
         </div>
     </div>
     `
-
+   
     let carCard = document.createElement('div')
     carCard.setAttribute('class', "card shadow car-rent")
     carCard.innerHTML = html
