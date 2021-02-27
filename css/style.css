@@ -23,11 +23,12 @@ body {
     transform: translateY(-5px) ;
 }
 
-.card {
-    background-color: #B8B8B8;
+.card img {
+    height: 225px;
+    border-bottom: 1px solid black;
+    background-color: #171C26;
 }
 
-.card 
 #contact-page {
     background-image: linear-gradient(
         rgba(0, 0, 0, 0.2), 
