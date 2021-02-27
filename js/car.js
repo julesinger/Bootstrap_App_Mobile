@@ -28,7 +28,7 @@ const Car = function(_id, _mod, _desc, _prices, _url, _cv, _nbPlaces, _year, _tr
  * @param { String } keywords 
  */
 export let search = function(keywords) {
-    return products.filter(product => product.ref.includes(keywords) || product.description.includes(keywords))
+    return cars.filter(car => car.mod.toLowerCase().includes(keywords.toLowerCase()))
 }
 
 let car1 = new Car(1, 'C63s', 'Superbe voiture de sport du concessionnaire Mercedes, elle allie classe et sportivité.', [400, 600, 1200], 'c63s.png', 510, 4, 2018, 'Auto')

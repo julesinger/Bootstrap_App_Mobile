@@ -7,7 +7,7 @@ export let init = () => {
     let search_bar = document.querySelector('#product-search')
     search_bar.addEventListener('keyup', (e) => {
        if(e.key === 'Enter') {
-           ui.buildProductsList(search_bar.value.trim() !== "" ? products.search(search_bar.value) : products.products)
+           ui.displayCarsList(search_bar.value.trim() !== "" ? cars.search(search_bar.value) : cars.cars)
        }
     })
 
