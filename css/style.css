@@ -13,6 +13,11 @@ body {
 	outline: none;
 }
 
+.header-content {
+    width: 100vw;
+    z-index: 1000;
+}
+
 .car-rent {
     width: 20vw;
     transition: transform 0.3s;
@@ -104,7 +109,7 @@ body {
         display: block;
         margin: auto;
     }
-    
+
     .carac-container {
         justify-content: center;
     }
