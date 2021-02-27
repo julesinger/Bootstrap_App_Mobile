@@ -14,8 +14,16 @@ body {
 }
 
 .header-content {
-    width: 100vw;
+    width: 100%;
     z-index: 1000;
+}
+
+.header-title {
+    margin-top: 7rem;
+}
+
+.header-title h2{
+    margin-top: 3rem;
 }
 
 .car-rent {
@@ -60,7 +68,6 @@ body {
 }
 
 
-
 #contact-page {
     background-image: linear-gradient(
         rgba(0, 0, 0, 0.2), 
@@ -92,6 +99,11 @@ body {
     .caracteristique {
         width: 20vw;
     }
+
+    .search-bar {
+        display: flex;
+        justify-content: center;
+    }
 }
 
 @media screen and (max-width: 1200px) {
@@ -121,17 +133,21 @@ body {
 
 @media screen and (max-width: 900px) {
     .car-rent {
-        width: 70vw;
+        width: 40vw;
     }
 
     .caracteristique {
         width: 30vw;
     }
+
+    .header-title {
+        margin-top: 1rem;
+    }
 }
 
 @media screen and (max-width: 700px) {
     .car-rent {
-        width: 90vw;
+        width: 60vw;
     }
 
     .caracteristique {
@@ -142,10 +158,36 @@ body {
     .car-photo {
         width: 20rem;
     }
+
+    .header-title p{
+        display: none;
+    }
+
+   
+}
+
+
+@media screen and (max-width: 600px) {
+
+    .header-content a {
+        font-size: 1rem;
+    }
+
+    .header-title h2, .header-title h1 {
+        font-size: 1.2rem;
+    }
+
+    .header-title h2 {
+        margin-top: 1rem;
+    }
 }
 
 @media screen and (max-width: 500px) {
     .car-rent {
         width: 90vw;
+    }
+
+    .header-title h2 {
+        font-size: 1rem;
     }
 }
