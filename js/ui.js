@@ -15,7 +15,7 @@ export let displayCarCard = function(car) {
     `
 
     let carCard = document.createElement('div')
-    carCard.classList.add("card.shadow.car-rent")
+    carCard.setAttribute('class', "card shadow car-rent")
     carCard.innerHTML = html
     return carCard
 }
