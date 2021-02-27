@@ -1,6 +1,35 @@
-// fonction displayCarCard (représente une card sur la page d'accueil)
+/**
+ * Build the card of a car
+ * @param {Car} car 
+ */
+export let displayCarCard = function(car) {
+    let html = `
+        <img src="/images/${car.url}" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">${car.mod}</h5>
+            <p class="card-text">${car.desc}</p>
+            <div class="container d-flex justify-content-end">
+                <button type="button" class="btn btn-dark">En savoir plus</button>
+            </div>
+        </div>
+    `
 
-// fonction buildCarsCards (représente toutes les cards sur la page d'accueil)
+    let carCard = document.createElement('div')
+    carCard.classList.add("card shadow car-rent")
+    carCard.innerHTML = html 
+}
+
+/**
+ * Display the list of the current cars array
+ * @param {*} cars 
+ */
+export let displayCarsList = function(cars) {
+    let car_list = document.querySelector('#car-list')
+	while(car_list.firstChild) {
+		car_list.removeChild(car_list.firstChild)
+	}
+	cars.forEach( car => { car_list.appendChild(displayCarCard(car)) });
+}
 
 // fonction displayCarDetails (pour la page de détail de chaque véhicule)
 
