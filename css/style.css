@@ -2,6 +2,20 @@ body {
     background-color: #1F2533;
 }
 
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.header-content {
+    z-index: 100;
+    width: 100vw; 
+
+}
+
+nav {
+    top: 2rem;
+}
+
 #product-search {
 	font-size: 1rem;
 	background-color: #F1F1F1;
