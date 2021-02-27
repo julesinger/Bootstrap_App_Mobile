@@ -4,7 +4,7 @@
  */
 export let displayCarCard = function(car) {
     let html = `
-        <img src="/images/${car.url}" class="card-img-top" alt="...">
+        <img src="../images/${car.url}" class="card-img-top" alt="...">
         <div class="card-body">
             <h5 class="card-title">${car.mod}</h5>
             <p class="card-text">${car.desc}</p>
@@ -15,8 +15,9 @@ export let displayCarCard = function(car) {
     `
 
     let carCard = document.createElement('div')
-    carCard.classList.add("card shadow car-rent")
-    carCard.innerHTML = html 
+    carCard.classList.add("card.shadow.car-rent")
+    carCard.innerHTML = html
+    return carCard
 }
 
 /**

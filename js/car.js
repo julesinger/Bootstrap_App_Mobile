@@ -32,8 +32,8 @@ export let search = function(keywords) {
     return products.filter(product => product.ref.includes(keywords) || product.description.includes(keywords))
 }
 
-let car1 = new Car('C63s', 'Superbe voiture de sport du concessionnaire Mercedes, elle allie classe et sportivité.', [400, 600, 1200], 'c63s.jpg', 510, 4, 2018, [], 'Auto')
-let car2 = new Car('R8 v10 plus', "Voiture de course emblématique du concessionnaire Audi, elle est la plus performante du constructeur."[550, 700, 1600], 'r8.jpg', 620, 2, 2018, [], 'Auto')
-let car3 = new Car('Aventador', "Voiture de course digne de la batmobile, l'une des voitures les plus performantes de Lamborghini."[600, 900, 1800], 'aventador.jpg', 700, 2, 2018, [], 'Auto')
+let car1 = new Car('C63s', 'Superbe voiture de sport du concessionnaire Mercedes, elle allie classe et sportivité.', [400, 600, 1200], 'c63s.png', 510, 4, 2018, [], 'Auto')
+let car2 = new Car('R8 v10 plus', "Voiture de course emblématique du concessionnaire Audi, elle est la plus performante du constructeur.", [550, 700, 1600], 'r8.png', 620, 2, 2018, [], 'Auto')
+let car3 = new Car('Aventador', "Voiture de course digne de la batmobile, l'une des voitures les plus performantes de Lamborghini.", [600, 900, 1800], 'aventador.png', 700, 2, 2018, [], 'Auto')
 
 cars.push(car1, car2, car3);
