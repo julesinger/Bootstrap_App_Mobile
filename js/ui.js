@@ -9,7 +9,7 @@ export let displayCarCard = function(car) {
             <h5 class="card-title">${car.mod}</h5>
             <p class="card-text">${car.desc}</p>
             <div class="container d-flex justify-content-end">
-                <button type="button" class="btn btn-dark">En savoir plus</button>
+               <a href="/html/cars/${car.id}.html"> <button type="button" class="btn btn-dark">En savoir plus</button> </a>
             </div>
         </div>
     `
