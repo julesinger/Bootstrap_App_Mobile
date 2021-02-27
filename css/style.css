@@ -82,13 +82,60 @@ body {
 
     .car-rent {
         width: 30vw;
-        
+    }
+
+    .caracteristique {
+        width: 20vw;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .car-photo {
+        width: 30rem;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .model-container {
+        flex-direction: column;
+    }
+
+    .car-photo {
+        display: block;
+        margin: auto;
+    }
+    
+    .carac-container {
+        justify-content: center;
+    }
+
+    .caracteristique {
+        width: 25vw;
     }
 }
 
 @media screen and (max-width: 900px) {
     .car-rent {
         width: 70vw;
+    }
+
+    .caracteristique {
+        width: 30vw;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .car-rent {
+        width: 90vw;
+    }
+
+    .caracteristique {
+        width: 60vw;
+        margin: 1rem 0;
+    }
+
+    .car-photo {
+        width: 20rem;
     }
 }
 
